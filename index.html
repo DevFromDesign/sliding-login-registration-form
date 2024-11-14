@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="heading">Login & Registration Form</h1>
+    </header>
+
+    <!-- Container for form -->
+    <div class="container">
+        <!-- Toggle buttons for login and signup -->
+        <div class="btn">
+            <button class="login" id="loginBtn">Login</button>
+            <button class="signup" id="signupBtn">Signup</button>
+        </div>
+
+        <!-- Slider to highlight the active button -->
+        <div class="slider" id="slider"></div>
+
+        <!-- Form section with both login and signup forms -->
+        <div class="form-section">
+            <!-- Login form -->
+            <div class="login-box">
+                <input type="email" class="email ele" placeholder="youremail@email.com">
+                <input type="password" class="password ele" placeholder="Password">
+                <button class="clkbtn">Login</button>
+            </div>
+
+            <!-- Signup form -->
+            <div class="signup-box">
+                <input type="text" class="name ele" placeholder="Enter your name">
+                <input type="email" class="email ele" placeholder="youremail@email.com">
+                <input type="password" class="password ele" placeholder="Password">
+                <input type="password" class="password ele" placeholder="Confirm Password">
+                <button class="clkbtn">Signup</button> <!-- Signup button -->
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
