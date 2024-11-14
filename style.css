@@ -1,0 +1,195 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    flex-direction: column;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.heading {
+    font-size: 32px;
+    color: #485ae5;
+    margin-bottom: 5px;
+}
+
+.title {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Container Styling */
+.container {
+    width: 100%;
+    max-width: 400px;
+    height: 750px; /* Fixed height to ensure enough space for larger screens */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    padding: 20px;
+    border: 2px solid #4CAF50; /* Outline added around the form */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Ensure that the content starts from the top */
+}
+
+/* Toggle Buttons Styling */
+.btn {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.btn button {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.btn .login {
+    border-top-left-radius: 8px;
+}
+
+.btn .signup {
+    border-top-right-radius: 8px;
+}
+
+.btn button:hover {
+    background-color: #7cccfd;
+}
+
+/* Slider for Active Form */
+.slider {
+    display: none;
+}
+
+/* Form Section Styling (Both login and signup are visible at once) */
+.form-section {
+    position: relative;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Space between form elements */
+    justify-content: flex-start; /* Align the form elements from top to bottom */
+    flex-grow: 1;
+    overflow-y: auto; /* Allow scrolling if content exceeds container height */
+}
+
+/* Styling for both login and signup boxes */
+.login-box,
+.signup-box {
+    width: 100%;
+    display: none; /* Hide both forms initially */
+}
+
+/* Visible form when active */
+.active-form {
+    display: block; /* Show active form */
+}
+
+/* Input Fields and Buttons */
+.ele {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0; /* Increased margin for spacing */
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+/* Hover effect on input fields */
+.ele:hover,
+.ele:focus {
+    border-color: #4CAF50;
+}
+
+.ele::placeholder {
+    color: #bbb;
+    transition: color 0.3s;
+}
+
+/* Change color of placeholder on hover/focus */
+.ele:hover::placeholder,
+.ele:focus::placeholder {
+    color: #4CAF50;
+}
+
+.clkbtn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.clkbtn:hover {
+    background-color: #45a049;
+}
+
+/* Styling for the second button at the bottom of each form */
+.bottom-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #4CAF50;
+    background-color: transparent;
+    border: 2px solid #4CAF50;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.bottom-btn:hover {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+/* Responsive Styling */
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+        height: auto; /* Adjust height for smaller screens */
+        padding-bottom: 20px; /* Extra padding for mobile devices */
+    }
+
+    .btn button {
+        font-size: 14px;
+    }
+
+    .ele {
+        font-size: 14px;
+    }
+}
