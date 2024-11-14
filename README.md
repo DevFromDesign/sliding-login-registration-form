@@ -9,4 +9,4 @@ This project features a **Sliding Login & Registration Form** built with **HTML*
 
 ## Demo
 
-You can see a demo of the form here: [Link to demo or hosting platform]
+You can see a demo of the form here: [https://tipsninfoo.blogspot.com/2024/11/login-and-registration-form.html]
